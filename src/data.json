@@ -76,5 +76,27 @@
                 }
             ]
         }
+    ],
+    "languages": [
+        {
+            "id": 1,
+            "name": "English",
+            "level": 5
+        },
+        {
+            "id": 2,
+            "name": "Dutch",
+            "level": 5
+        },
+        {
+            "id": 3,
+            "name": "French",
+            "level": 2
+        },
+        {
+            "id": 4,
+            "name": "German | Chinese",
+            "level": 1
+        }
     ]
 }

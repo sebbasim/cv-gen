@@ -6,7 +6,6 @@
 
 <style>
     h3 {
-        text-transform: uppercase;
         font-size: 1em;
         font-weight: 600;
         font-family: "Roboto", sans-serif;

@@ -3,6 +3,7 @@
 	import Summary from "./components/Summary.svelte";
 	import Experience from "./components/Experience.svelte";
 	import Education from "./components/Education.svelte";
+	import Languages from "./components/Languages.svelte";
 </script>
 
 <Header name="Sebastiaan Simons" job_title="Full-stack engineer" />
@@ -11,6 +12,7 @@
 	<div class="left-column">
 		<Summary />
 		<Experience />
+		<Languages />
 	</div>
 	<div class="right-column">
 		<Education />
