@@ -4,12 +4,11 @@
 </script>
 
 <main>
-	<div class="column-1">
+	<div class="left-column">
 		<Summary />
 		<Experience />
 	</div>
-	<div class="column-2">
-		<Summary />
+	<div class="right-column">
 		<Summary />
 	</div>
 </main>
@@ -21,14 +20,14 @@
 		display: flex;
 		width: 210mm;
 	}
-	.column-1 {
+	.left-column {
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
 		flex: 0 0 60%;
 		border: 1px solid black;
 	}
-	.column-2 {
+	.right-column {
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
@@ -38,12 +37,5 @@
 	@page {
 		size: A4;
 		margin: 0;
-	}
-	@media print {
-		html,
-		body {
-			width: 210mm;
-			height: 297mm;
-		}
 	}
 </style>

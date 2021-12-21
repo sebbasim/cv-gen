@@ -1,0 +1,46 @@
+{
+    "experiences": [
+        {
+            "title": "Full-stack engineer",
+            "company": "Sparklink",
+            "start_date": "01/2020",
+            "end_date": "06/2021",
+            "location": "Antwerp, Belgium",
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "  logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                },
+                {
+                    "id": 2,
+                    "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                },
+                {
+                    "id": 3,
+                    "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
+                }
+            ]
+        }, 
+        {
+            "title": "Salesforce developer",
+            "company": "Business&Decision | Brightfox",
+            "start_date": "08/2018",
+            "end_date": "12/2019",
+            "location": "Antwerp, Belgium | Breda, The Netherlands",
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "Setting up and maintaining the Salesforce environment and data model for various clients, using both declarative and programmatic tools"
+                },
+                {
+                    "id": 2,
+                    "text": "Development and template building for a document generation tool available on the AppExchange"
+                },
+                {
+                    "id": 3,
+                    "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
+                }
+            ]
+        }
+    ]
+}
