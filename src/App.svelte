@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Summary from "./components/Summary.svelte";
 	import Experience from "./components/Experience.svelte";
+	import Education from "./components/Education.svelte";
 </script>
 
 <main>
@@ -9,7 +10,7 @@
 		<Experience />
 	</div>
 	<div class="right-column">
-		<Summary />
+		<Education />
 	</div>
 </main>
 
@@ -25,14 +26,12 @@
 		flex-direction: column;
 		padding: 1em;
 		flex: 0 0 60%;
-		border: 1px solid black;
 	}
 	.right-column {
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
 		flex: 0 0 40%;
-		border: 1px solid black;
 	}
 	@page {
 		size: A4;

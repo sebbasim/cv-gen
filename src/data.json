@@ -1,5 +1,21 @@
 {
-    "experiences": [
+    "summary": {
+        "bullet_points": [
+            {
+                "id": 1,
+                "text": "3+ years of experience as a software / full-stack engineer."
+            },
+            {
+                "id": 2,
+                "text": "Done several complex (Salesforce) implementations for a wide variety of companies"
+            },
+            {
+                "id": 3,
+                "text": "Generalist, fast learner, autodidact"
+            }
+        ]
+    },
+    "experience": [
         {
             "title": "Full-stack engineer",
             "company": "Sparklink",
@@ -9,7 +25,7 @@
             "bullet_points": [
                 {
                     "id": 1,
-                    "text": "  logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                    "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
                 },
                 {
                     "id": 2,
@@ -20,7 +36,7 @@
                     "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
                 }
             ]
-        }, 
+        },
         {
             "title": "Salesforce developer",
             "company": "Business&Decision | Brightfox",
@@ -39,6 +55,24 @@
                 {
                     "id": 3,
                     "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "MSc Business Science",
+            "institution": "University of Leuven",
+            "start_date": "09/2013",
+            "end_date": "06/2018",
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "Focused mostly on finance and marketing. I also improved my skills in a variety of domains: statistics, maths, economics, languages, ..."
+                },
+                {
+                    "id": 2,
+                    "text": "Includes a 6-month internship at the finance department of a medium-sized hotel"
                 }
             ]
         }

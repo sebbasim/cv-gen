@@ -26,6 +26,7 @@
 <style>
     li {
         font-size: 0.9em;
+        margin-bottom: 5px;
     }
     ul {
         padding-left: 15px;

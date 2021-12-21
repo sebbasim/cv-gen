@@ -6,7 +6,9 @@
 
 <main>
     <span>{start_date} - {end_date}</span>
-    <span class="location">{location}</span>
+    {#if location !== undefined}
+        <span class="location">{location}</span>
+    {/if}
 </main>
 
 <style>
@@ -18,6 +20,6 @@
     }
 
     .location {
-        margin-left: 10px;  
+        margin-left: 10px;
     }
 </style>

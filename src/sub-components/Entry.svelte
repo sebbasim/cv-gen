@@ -3,7 +3,7 @@
     import List from "../style-components/List.svelte";
     import SubTitle from "../style-components/SubTitle.svelte";
     export let title: string;
-    export let company: string;
+    export let institution: string;
     export let start_date: string;
     export let end_date: string;
     export let location: string;
@@ -15,13 +15,13 @@
 
 <SubTitle {title} />
 <main>
-    <span class="company">{company}</span>
+    <span class="institution">{institution}</span>
     <DateAndLocation {start_date} {end_date} {location} />
     <List {bullet_points} />
 </main>
 
 <style>
-    .company {
+    .institution {
         color: #00bfff;
         font-weight: bold;
     }
