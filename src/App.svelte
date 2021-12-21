@@ -1,8 +1,11 @@
 <script lang="ts">
+	import Header from "./components/Header.svelte";
 	import Summary from "./components/Summary.svelte";
 	import Experience from "./components/Experience.svelte";
 	import Education from "./components/Education.svelte";
 </script>
+
+<Header name="Sebastiaan Simons" job_title="Full-stack engineer" />
 
 <main>
 	<div class="left-column">

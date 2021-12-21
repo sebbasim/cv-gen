@@ -18,7 +18,7 @@
     "experience": [
         {
             "title": "Full-stack engineer",
-            "company": "Sparklink",
+            "institution": "Sparklink",
             "start_date": "01/2020",
             "end_date": "06/2021",
             "location": "Antwerp, Belgium",
@@ -39,7 +39,7 @@
         },
         {
             "title": "Salesforce developer",
-            "company": "Business&Decision | Brightfox",
+            "institution": "Business&Decision | Brightfox",
             "start_date": "08/2018",
             "end_date": "12/2019",
             "location": "Antwerp, Belgium | Breda, The Netherlands",

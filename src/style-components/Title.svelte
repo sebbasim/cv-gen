@@ -10,7 +10,7 @@
 <style>
     h2 {
         text-transform: uppercase;
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: 600;
         font-family: "Roboto", sans-serif;
         margin: 10px 10px 0px 10px; 
