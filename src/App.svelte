@@ -1,11 +1,12 @@
 <script lang="ts">
 	import Summary from "./components/Summary.svelte";
+	import Experience from "./components/Experience.svelte";
 </script>
 
 <main>
 	<div class="column-1">
 		<Summary />
-		<Summary />
+		<Experience />
 	</div>
 	<div class="column-2">
 		<Summary />
@@ -16,7 +17,7 @@
 <style>
 	/* column styling has a lot of duplicate entities*/
 	main {
-        font-family: "Roboto", sans-serif;
+		font-family: "Roboto", sans-serif;
 		display: flex;
 		width: 210mm;
 	}
@@ -25,15 +26,14 @@
 		flex-direction: column;
 		padding: 1em;
 		flex: 0 0 60%;
-		border: 1px solid black; 
+		border: 1px solid black;
 	}
 	.column-2 {
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
 		flex: 0 0 40%;
-		border: 1px solid black; 
-
+		border: 1px solid black;
 	}
 	@page {
 		size: A4;
