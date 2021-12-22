@@ -96,7 +96,7 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
         column-gap: 10px;
-        margin: 15px;
+        margin: 15px 15px 15px 0px;
     }
     #flex-container {
         display: flex;

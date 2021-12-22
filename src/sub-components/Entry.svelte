@@ -28,6 +28,5 @@
         font-weight: bold;
     }
     main {
-        margin-left: 10px;
     }
 </style>

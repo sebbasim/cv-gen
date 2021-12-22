@@ -31,24 +31,23 @@
 	main {
 		font-family: "Roboto", sans-serif;
 		display: flex;
-		width: 210mm;
+		width: 195mm;
 	}
 	.left-column {
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
-		flex: 0 0 60%;
+		padding-right: 30px;
+		flex: 0 0 58%;
 	}
 	.right-column {
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
-		flex: 0 0 40%;
+		flex: 0 0 38%;
 	}
 	.footer {
 		position: absolute; 
-		left: 280px;
-		top: 1170px;
+		left: 250px;
+		top: 1100px;
 	}
 	@page {
 		size: A4;

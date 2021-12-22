@@ -62,14 +62,12 @@
     #flex-container {
         display: flex;
         justify-content: space-between;
-        margin: 10px 10px 0px 0px;
-        width: 210mm;
+        width: 195mm;
     }
     #grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin-left: 25px;
         column-gap: 30px;
     }
     h1 {
@@ -77,14 +75,14 @@
         font-size: 2.2em;
         font-weight: 600;
         font-family: "Roboto", sans-serif;
-        margin: 10px 10px 0px 25px;
+        margin: 10px 10px 0px 0px;
     }
     h2 {
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 800;
         font-family: "Roboto", sans-serif;
-        margin: 0px 10px 0px 25px;
+        margin: 0px 10px 0px 0px;
         color: #00bfff;
     }
 </style>
