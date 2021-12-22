@@ -98,5 +98,45 @@
             "name": "German | Chinese",
             "level": 1
         }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Food Delivery App",
+            "description": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep. <br/> Technologies: Flutter / Dart | Firebase | Stripe payment integration"
+        }
+    ],
+    "volunteering": [
+       
+        {
+            "title": "Coding Teacher",
+            "institution": "CoderDojo / freelance",
+            "start_date": "05/2019",
+            "end_date": "ongoing",
+            "location": "Antwerp, Belgium",
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "Teaching kids between 7 - 18 how to code through many different projects"
+                },
+                {
+                    "id": 2,
+                    "text": "Creating and teaching a personalized programming course for beginners"
+                }
+            ]
+        }, 
+        {
+            "title": "English Teacher",
+            "institution": "Vietlish",
+            "start_date": "06/2018",
+            "end_date": "08/2018",
+            "location": "Ho Chi Minh City, Vietnam",
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
+                }
+            ]
+        }
     ]
 }
