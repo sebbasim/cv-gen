@@ -3,11 +3,12 @@
         id: number;
         text: string;
     }[];
+    export let font_size = "0.9em"; 
 </script>
 
 <ul>
     {#each bullet_points as bullet}
-        <li>
+        <li style="font-size:{font_size}">
             {bullet.text}
         </li>
     {/each}
@@ -15,10 +16,9 @@
 
 <style>
     li {
-        font-size: 0.9em;
         margin-bottom: 5px;
     }
     ul {
-        padding-left: 15px;
+        padding-left: 20px;
     }
 </style>

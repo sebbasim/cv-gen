@@ -1,17 +1,13 @@
 <script lang="ts">
     import Title from "../style-components/Title.svelte";
     import * as data from "../data.json";
-    let height: number;
+    import List from "../style-components/List.svelte";
+    let bullet_points = data["summary"]["bullet_points"];
 </script>
 
-<div bind:clientHeight={height}>
+<div>
     <Title title="Summary" />
-
-    <ul>
-        {#each data["summary"]["bullet_points"] as bullet}
-            <li>{bullet.text}</li>
-        {/each}
-    </ul>
+    <List {bullet_points} font_size="1em" />
 </div>
 
 <style>
