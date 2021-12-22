@@ -24,5 +24,6 @@
         gap: 20px;
         justify-content: space-between;
         margin-left: 5px;
+        margin-bottom: 15px;
     }
 </style>

@@ -257,7 +257,7 @@
         {
             "title": "Generalist",
             "icon" : "fas fa-gem", 
-            "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I'd like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
+            "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
         },
         {
             "title": "Fast Learner",
@@ -267,7 +267,7 @@
         {
             "title": "Autodidact",
             "icon" : "fa fa-atom", 
-            "description": "Naturally, I'm good at learning things by myself, being at the centre of my own learning."
+            "description": "I'm good at learning things by myself, being at the centre of my own learning."
         }
     ]
 }

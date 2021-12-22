@@ -13,11 +13,11 @@
 <Header />
 <main>
 	<div class="left-column">
-		<Strengths />
 		<Summary />
 		<Experience />
 		<Languages />
-		<div style="height:250px" />
+		<div style="height:223px" />
+		<Strengths />
 		<Projects />
 	</div>
 	<div class="right-column">
