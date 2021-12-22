@@ -1,13 +1,12 @@
 <script lang="ts">
-    // import * as data from "../data.json";
-    export let name: string;
-    export let job_title: string;
+    import * as data from "../data.json";
+    let header = data["header"]; 
 </script>
 
 <div id="flex-container">
     <div>
-        <h1>{name}</h1>
-        <h2>{job_title}</h2>
+        <h1>{header.name}</h1>
+        <h2>{header.job_title}</h2>
         <br />
         <div id="grid-container">
             <span
@@ -15,28 +14,28 @@
                     class="icon"
                     alt="smartphone"
                     src="assets/icons/phone.svg"
-                />&nbsp; + some mobile number</span
+                />&nbsp; + {header.mobile}</span
             >
             <span
                 ><img
                     class="icon"
                     alt="GitHub"
                     src="assets/icons/github.svg"
-                />&nbsp; github.com/SebastiaanSimons</span
+                />&nbsp; {header.github}</span
             >
             <span
                 ><img
                     class="icon"
                     alt="inbox"
                     src="assets/icons/inbox.svg"
-                />&nbsp; sebastiaansimons@outlook.com</span
+                />&nbsp; {header.email}</span
             >
             <span
                 ><img
                     class="icon"
                     alt="location"
                     src="assets/icons/map-marker.svg"
-                />&nbsp; Antwerp, Belgium</span
+                />&nbsp; {header.location}</span
             >
         </div>
     </div>

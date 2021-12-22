@@ -26,5 +26,6 @@
     .institution {
         color: #00bfff;
         font-weight: bold;
+        font-size: 15px;
     }
 </style>

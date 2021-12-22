@@ -9,7 +9,7 @@
 	import Skills from "./components/Skills.svelte";
 </script>
 
-<Header name="Sebastiaan Simons" job_title="Full-stack engineer" />
+<Header />
 <main>
 	<div class="left-column">
 		<Summary />
@@ -51,8 +51,9 @@
 	}
 	.footer {
 		position: absolute;
-		left: 250px;
+		left: 220px;
 		top: 1100px;
+		color: grey;
 	}
 	@page {
 		size: A4;

@@ -1,4 +1,12 @@
 {
+    "header": {
+        "name": "Sebastiaan Simons",
+        "job_title": "Full-stack engineer",
+        "mobile": "Some mobile number",
+        "email": "Some email",
+        "github": "github.com/SebastiaanSimons",
+        "location": "Antwerp, Belgium"
+    },
     "summary": {
         "bullet_points": [
             {
