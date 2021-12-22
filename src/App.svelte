@@ -7,11 +7,13 @@
 	import Projects from "./components/Projects.svelte";
 	import Volunteering from "./components/Volunteering.svelte";
 	import Skills from "./components/Skills.svelte";
+	import Strengths from "./components/Strengths.svelte";
 </script>
 
 <Header />
 <main>
 	<div class="left-column">
+		<Strengths />
 		<Summary />
 		<Experience />
 		<Languages />

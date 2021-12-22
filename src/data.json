@@ -155,7 +155,7 @@
         },
         {
             "title": "English Teacher",
-            "institution": "Vietlish",
+            "institution": "Aiesec / Vietlish",
             "start_date": "06/2018",
             "end_date": "08/2018",
             "location": "Ho Chi Minh City, Vietnam",
@@ -251,6 +251,23 @@
                     "level": 1
                 }
             ]
+        }
+    ],
+    "strengths": [
+        {
+            "title": "Generalist",
+            "icon" : "fas fa-gem", 
+            "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I'd like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
+        },
+        {
+            "title": "Fast Learner",
+            "icon" : "fas fa-chart-line", 
+            "description": "I'm able to quickly pick up matter, even if it is well outside of my area of expertise."
+        },
+        {
+            "title": "Autodidact",
+            "icon" : "fa fa-atom", 
+            "description": "Naturally, I'm good at learning things by myself, being at the centre of my own learning."
         }
     ]
 }
