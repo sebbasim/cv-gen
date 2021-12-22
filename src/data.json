@@ -101,13 +101,34 @@
     ],
     "projects": [
         {
-            "id": 1,
             "title": "Food Delivery App",
-            "description": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep. <br/> Technologies: Flutter / Dart | Firebase | Stripe payment integration"
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep."
+                },
+                {
+                    "id": 2,
+                    "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
+                }
+            ]
+        }, 
+        {
+            "title": "CV Builder",
+        
+            "bullet_points": [
+                {
+                    "id": 1,
+                    "text": "A CV creator to dynamically build your own CV. (This CV is built with it.)"
+                },
+                {
+                    "id": 2,
+                    "text": "Technologies: Svelte | CSS3 | TypeScript"
+                }
+            ]
         }
     ],
     "volunteering": [
-       
         {
             "title": "Coding Teacher",
             "institution": "CoderDojo / freelance",
@@ -124,7 +145,7 @@
                     "text": "Creating and teaching a personalized programming course for beginners"
                 }
             ]
-        }, 
+        },
         {
             "title": "English Teacher",
             "institution": "Vietlish",

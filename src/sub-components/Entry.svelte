@@ -15,7 +15,9 @@
 
 <SubTitle {title} />
 <main>
+    {#if institution !== undefined}
     <span class="institution">{institution}</span>
+    {/if}
     <DateAndLocation {start_date} {end_date} {location} />
     <List {bullet_points} />
 </main>

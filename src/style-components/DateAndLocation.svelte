@@ -5,7 +5,9 @@
 </script>
 
 <main>
-    <span>{start_date} - {end_date}</span>
+    {#if start_date !== undefined && end_date !== undefined}
+        <span>{start_date} - {end_date}</span>
+    {/if}
     {#if location !== undefined}
         <span class="location">{location}</span>
     {/if}
