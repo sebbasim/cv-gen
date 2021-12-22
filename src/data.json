@@ -17,7 +17,7 @@
     },
     "experience": [
         {
-            "title": "Full-stack engineer",
+            "title": "Full-stack Engineer",
             "institution": "Sparklink",
             "start_date": "01/2020",
             "end_date": "06/2021",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "title": "Salesforce developer",
+            "title": "Salesforce Developer",
             "institution": "Business&Decision | Brightfox",
             "start_date": "08/2018",
             "end_date": "12/2019",
@@ -112,14 +112,13 @@
                     "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
                 }
             ]
-        }, 
+        },
         {
             "title": "CV Builder",
-        
             "bullet_points": [
                 {
                     "id": 1,
-                    "text": "A CV creator to dynamically build your own CV. (This CV is built with it.)"
+                    "text": "A CV creator to dynamically build your own CV, including this one. (ongoing)"
                 },
                 {
                     "id": 2,
@@ -156,6 +155,92 @@
                 {
                     "id": 1,
                     "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
+                }
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "group": "Programming Languages",
+            "skill_set": [
+                {
+                    "name": "Java / Apex (Salesforce)",
+                    "level": 4
+                },
+                {
+                    "name": "JavaScript / TypeScript",
+                    "level": 4
+                },
+                {
+                    "name": "Rust",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "group": "Front-end",
+            "skill_set": [
+                {
+                    "name": "HTML5 / CSS3",
+                    "level": 4
+                },
+                {
+                    "name": "Svelte",
+                    "level": 3
+                },
+                {
+                    "name": "LWC (Salesforce)",
+                    "level": 3
+                },
+                {
+                    "name": "React (Native)",
+                    "level": 1
+                },
+                {
+                    "name": "Flutter",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "group": "Back-end",
+            "skill_set": [
+                {
+                    "name": "Salesforce Database",
+                    "level": 5
+                },
+                {
+                    "name": "SQL / SOQL",
+                    "level": 3
+                },
+                {
+                    "name": "AWS",
+                    "level": 2
+                },
+                {
+                    "name": "Firebase",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "group": "Other",
+            "skill_set": [
+                {
+                    "name": "Jira / Trello",
+                    "level": 3
+                },
+                {
+                    "name": "Git / GitHub",
+                    "level": 3
+                },
+                {
+                    "name": "Blender",
+                    "level": 1
+                },
+                {
+                    "name": "Game Development",
+                    "level": 1
                 }
             ]
         }

@@ -6,7 +6,7 @@
 	import Languages from "./components/Languages.svelte";
 	import Projects from "./components/Projects.svelte";
 	import Volunteering from "./components/Volunteering.svelte";
-
+	import Skills from "./components/Skills.svelte";
 </script>
 
 <Header name="Sebastiaan Simons" job_title="Full-stack engineer" />
@@ -20,11 +20,16 @@
 	</div>
 	<div class="right-column">
 		<Education />
+		<Skills />
+		<div style="height:345px" />
 		<Volunteering />
 	</div>
 </main>
 
-<div class="footer">Developed with <i class="fa fa-heart" style="color:red"></i> and Svelte by yours truly :)</div>
+<div class="footer">
+	Developed with <i class="fa fa-heart" style="color:red" /> and Svelte by yours
+	truly :)
+</div>
 
 <style>
 	/* column styling has a lot of duplicate entities*/
@@ -45,7 +50,7 @@
 		flex: 0 0 38%;
 	}
 	.footer {
-		position: absolute; 
+		position: absolute;
 		left: 250px;
 		top: 1100px;
 	}

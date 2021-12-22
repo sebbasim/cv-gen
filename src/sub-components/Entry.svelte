@@ -27,6 +27,4 @@
         color: #00bfff;
         font-weight: bold;
     }
-    main {
-    }
 </style>

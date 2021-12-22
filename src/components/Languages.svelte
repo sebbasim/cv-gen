@@ -1,6 +1,7 @@
 <script lang="ts">
     import Title from "../style-components/Title.svelte";
     import * as data from "../data.json";
+    import Level from "../sub-components/Level.svelte";
     const language_level_mapping = {
         1: "Beginner",
         2: "Intermediate",
@@ -18,72 +19,11 @@
             <div id="left-column">
                 <b>{language.name}</b> <br />
                 <span class="language-level"
-                    >{language_level_mapping[language.level]}</span
-                >
+                    >{language_level_mapping[language.level]}
+                </span>
             </div>
-
             <div id="right-column">
-                <img
-                    class="icon"
-                    alt="GitHub"
-                    src="assets/icons/circle-blue.svg"
-                />
-
-                {#if language.level > 1}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-blue.svg"
-                    />
-                {:else}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-black.svg"
-                    />
-                {/if}
-
-                {#if language.level > 2}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-blue.svg"
-                    />
-                {:else}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-black.svg"
-                    />
-                {/if}
-
-                {#if language.level > 3}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-blue.svg"
-                    />
-                {:else}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-black.svg"
-                    />
-                {/if}
-
-                {#if language.level > 4}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-blue.svg"
-                    />
-                {:else}
-                    <img
-                        class="icon"
-                        alt="GitHub"
-                        src="assets/icons/circle-black.svg"
-                    />
-                {/if}
+                <Level level={language.level} />
             </div>
         </div>
     {/each}
@@ -104,17 +44,7 @@
         align-items: center;
     }
     .language-level {
-        color: grey;
-    }
-    .icon {
-        width: 17px;
-        color: #00bfff;
-        vertical-align: middle;
-    }
-    img {
-        margin: 0px;
-        padding: 0px;
-        float: left;
+        color: #808080;
     }
 
     #left-column {
