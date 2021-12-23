@@ -20,5 +20,6 @@
     }
     ul {
         padding-left: 20px;
+        margin: 10px 0px;
     }
 </style>

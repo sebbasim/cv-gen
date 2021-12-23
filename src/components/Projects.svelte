@@ -19,7 +19,7 @@
 
 <style>
     ul {
-        margin-top: 5px;
+        margin: 5px 0px;
         padding-left: 20px;
     }
     li {

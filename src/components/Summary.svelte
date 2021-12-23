@@ -7,7 +7,7 @@
 
 <div>
     <Title title="Summary" />
-    <List {bullet_points} font_size="1em" />
+    <List {bullet_points} font_size="0.9em" />
 </div>
 
 <style>

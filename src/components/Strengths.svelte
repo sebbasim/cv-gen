@@ -20,7 +20,7 @@
     .flex-container {
         display: flex;
         align-items: center;
-        font-size: 15px;
+        font-size: 0.9em;
         gap: 20px;
         justify-content: space-between;
         margin-left: 5px;
