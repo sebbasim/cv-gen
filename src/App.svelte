@@ -8,22 +8,27 @@
 	import Volunteering from "./components/Volunteering.svelte";
 	import Skills from "./components/Skills.svelte";
 	import Strengths from "./components/Strengths.svelte";
+	import * as data from "./data.json";
+	let style = data["style"];
+	let column_widths: number[] = style.column_widths;
+	let left_flex = column_widths[0] * 96; 
+	let right_flex = column_widths[1] * 96; 
 </script>
 
 <Header />
-<main>
-	<div class="left-column">
+<main style="font-family:{style.font_family}">
+	<div class="left-column" style="flex: 0 0 {left_flex}%">
 		<Summary />
 		<Experience />
 		<Languages />
-		<div style="height:223px" />
+		<div style="height:98px" />
 		<Strengths />
 		<Projects />
 	</div>
-	<div class="right-column">
+	<div class="right-column" style="flex: 0 0 {right_flex}%">
 		<Education />
 		<Skills />
-		<div style="height:345px" />
+		<div style="height:179px" />
 		<Volunteering />
 	</div>
 </main>
@@ -36,7 +41,6 @@
 <style>
 	/* column styling has a lot of duplicate entities*/
 	main {
-		font-family: "Roboto", sans-serif;
 		display: flex;
 		width: 195mm;
 	}
@@ -44,12 +48,10 @@
 		display: flex;
 		flex-direction: column;
 		padding-right: 30px;
-		flex: 0 0 58%;
 	}
 	.right-column {
 		display: flex;
 		flex-direction: column;
-		flex: 0 0 38%;
 	}
 	.footer {
 		position: absolute;

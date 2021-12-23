@@ -1,9 +1,10 @@
 <script lang="ts">
     import * as data from "../data.json";
     let header = data["header"]; 
+    let style = data["style"]; 
 </script>
 
-<div id="flex-container">
+<div id="flex-container" style="font-family:{style.font_family}">
     <div>
         <h1>{header.name}</h1>
         <h2>{header.job_title}</h2>
@@ -62,6 +63,7 @@
         display: flex;
         justify-content: space-between;
         width: 195mm;
+        font-family: "Roboto", sans-serif;
     }
     #grid-container {
         display: grid;

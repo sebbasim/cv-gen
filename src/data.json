@@ -1,4 +1,15 @@
 {
+    "style": {
+        "font_family": "Segoe UI",
+        "header_1": {
+            "font_size": "1.8em",
+            "underline": true
+        },
+        "column_widths": [
+            0.6,
+            0.4
+        ]
+    },
     "header": {
         "name": "Sebastiaan Simons",
         "job_title": "Full-stack engineer",
@@ -256,17 +267,17 @@
     "strengths": [
         {
             "title": "Generalist",
-            "icon" : "fas fa-gem", 
+            "icon": "fas fa-gem",
             "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
         },
         {
             "title": "Fast Learner",
-            "icon" : "fas fa-chart-line", 
+            "icon": "fas fa-chart-line",
             "description": "I'm able to quickly pick up matter, even if it is well outside of my area of expertise."
         },
         {
             "title": "Autodidact",
-            "icon" : "fa fa-atom", 
+            "icon": "fa fa-atom",
             "description": "I'm good at learning things by myself, being at the centre of my own learning."
         }
     ]
