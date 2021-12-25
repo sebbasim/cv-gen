@@ -4,17 +4,19 @@
     import SubTitle from "../style-components/SubTitle.svelte";
 </script>
 
-<Title title="Strengths" />
+<section>
+    <Title title="Strengths" />
 
-{#each data["strengths"]["entries"] as strength}
-    <div class="flex-container">
-        <i class="{strength.icon} fa-lg" style="color:#00bfff" />
-        <div>
-            <SubTitle title={strength.title} />
-            {@html strength.description}
+    {#each data["strengths"]["entries"] as strength}
+        <div class="flex-container">
+            <i class="{strength.icon} fa-lg" style="color:#00bfff" />
+            <div>
+                <SubTitle title={strength.title} />
+                {@html strength.description}
+            </div>
         </div>
-    </div>
-{/each}
+    {/each}
+</section>
 
 <style>
     .flex-container {

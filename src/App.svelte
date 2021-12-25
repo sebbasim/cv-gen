@@ -1,6 +1,4 @@
 <script lang="ts">
-	// onMount App => count children in left and right column, then switch in height messaging function
-	// dynamically insert svelte components based on json output
 	// scss support (variables) | rm duplicate css
 	import Header from "./components/Header.svelte";
 	import Summary from "./components/Summary.svelte";
@@ -12,18 +10,14 @@
 	import Skills from "./components/Skills.svelte";
 	import Strengths from "./components/Strengths.svelte";
 	import * as data from "./data.json";
-	import { onMount, SvelteComponent } from "svelte";
-	let style = data["style"];
-	let column_widths: number[] = style.column_widths;
+	import { onMount, SvelteComponent, tick } from "svelte";
+	const MAX_HEIGHT = 1050; 
+	const style = data["style"];
+	const column_widths: number[] = style.column_widths;
 	let left_flex = column_widths[0] * 96;
 	let right_flex = column_widths[1] * 96;
-	// let max_height = 500;
-	// let current_height = 0;
 	// let difference;
-	// let count_children = 0;
 	// function handle_message(event) {
-	// 	count_children++;
-	// 	current_height += event.detail.height;
 	// 	if (current_height > max_height) {
 	// 		difference = current_height - max_height;
 	// 		var div = document.createElement("div");
@@ -62,14 +56,41 @@
 	let components_left = [];
 	let components_right = [];
 
-	function init(): void {
+	async function init() {
 		for (const key in data) {
 			const component_data = data[key];
-			component_data["component"] = component_constructor(key);;
+			component_data["component"] = component_constructor(key);
 			if (component_data["column"] === "left") {
 				components_left = [...components_left, component_data];
 			} else if (component_data["column"] === "right") {
 				components_right = [...components_right, component_data];
+			}
+		}
+		// Updating our components_left / components_right arrays doesn't immediately update the DOM.
+		// It's batched together with other changes and updates in the next update cycle.
+		// To wait for the state changes to apply, we wait for the promise returned from tick() to be resolved.
+		await tick();
+		adjust_height();
+	}
+
+	let current_height = 0;
+
+	function header_height_handler(event) {
+		current_height += event.detail.height;
+	}
+
+	function adjust_height() {
+		for (let i = 1; i < components_left.length; i++) {
+			let current_element = document.querySelector(
+				`.left-column section:nth-child(${i})`
+			);
+			console.log(current_element); 
+			let height = window.getComputedStyle(current_element).height;
+			let height_number = parseInt(height.substring(0, height.length - 2));
+			current_height += height_number; 
+
+			if(current_height > MAX_HEIGHT) {
+
 			}
 		}
 	}
@@ -79,7 +100,7 @@
 	});
 </script>
 
-<Header />
+<Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
 		{#each components_left as component_left}

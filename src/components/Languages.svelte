@@ -11,23 +11,25 @@
     };
 </script>
 
-<Title title="Languages" />
+<section>
+    <Title title="Languages" />
 
-<div id="grid-container">
-    {#each data["languages"]["entries"] as language}
-        <div id="flex-container">
-            <div id="left-column">
-                <b>{language.name}</b> <br />
-                <span class="language-level"
-                    >{language_level_mapping[language.level]}
-                </span>
+    <div id="grid-container">
+        {#each data["languages"]["entries"] as language}
+            <div id="flex-container">
+                <div id="left-column">
+                    <b>{language.name}</b> <br />
+                    <span class="language-level"
+                        >{language_level_mapping[language.level]}
+                    </span>
+                </div>
+                <div id="right-column">
+                    <Level level={language.level} />
+                </div>
             </div>
-            <div id="right-column">
-                <Level level={language.level} />
-            </div>
-        </div>
-    {/each}
-</div>
+        {/each}
+    </div>
+</section>
 
 <style>
     #grid-container {

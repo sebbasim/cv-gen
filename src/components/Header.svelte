@@ -1,10 +1,25 @@
 <script lang="ts">
+    import { createEventDispatcher, onMount } from "svelte";
+
     import * as data from "../data.json";
-    let header = data["header"]; 
-    let style = data["style"]; 
+    let header = data["header"];
+    let style = data["style"];
+    let height;
+
+    const dispatch = createEventDispatcher();
+
+    onMount(() => {
+        dispatch("height", {
+            height,
+        });
+    });
 </script>
 
-<div id="flex-container" style="font-family:{style.font_family}">
+<div
+    id="flex-container"
+    style="font-family:{style.font_family}"
+    bind:clientHeight={height}
+>
     <div>
         <h1>{header.name}</h1>
         <h2>{header.job_title}</h2>
