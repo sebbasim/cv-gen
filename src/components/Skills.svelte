@@ -2,26 +2,27 @@
     import Title from "../style-components/Title.svelte";
     import * as data from "../data.json";
     import SubTitle from "../style-components/SubTitle.svelte";
-import Level from "../sub-components/Level.svelte";
+    import Level from "../sub-components/Level.svelte";
 </script>
 
-<Title title="Skills" />
+<section>
+    <Title title="Skills" />
 
-{#each data["skills"]["entries"] as skill_group}
-    <SubTitle title={skill_group.group} />
-    
+    {#each data["skills"]["entries"] as skill_group}
+        <SubTitle title={skill_group.group} />
+
         {#each skill_group.skill_set as skill}
-           <div class="flex-container">
+            <div class="flex-container">
                 <span class="skill-name"> {skill.name} </span>
                 <Level level={skill.level} />
-           </div>
+            </div>
         {/each}
-    
-{/each}
+    {/each}
+</section>
 
 <style>
     .flex-container {
-        display: flex; 
+        display: flex;
         justify-content: space-between;
         margin-bottom: 3px;
     }

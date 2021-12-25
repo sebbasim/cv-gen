@@ -4,11 +4,13 @@
     import * as data from "../data.json";
 </script>
 
-<Title title="Volunteering" />
+<section>
+    <Title title="Volunteering" />
 
-{#each data["volunteering"]["entries"] as volunteering_entry}
-    <VolunteeringEntry {...volunteering_entry} />
-{/each}
+    {#each data["volunteering"]["entries"] as volunteering_entry}
+        <VolunteeringEntry {...volunteering_entry} />
+    {/each}
+</section>
 
 <style>
 </style>

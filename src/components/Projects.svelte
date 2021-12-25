@@ -4,18 +4,20 @@
     import * as data from "../data.json";
 </script>
 
-<Title title="Personal Projects" />
+<section>
+    <Title title="Personal Projects" />
 
-{#each data["projects"]["entries"] as project}
-    <SubTitle title={project.title} />
-    <ul>
-        {#each project.bullet_points as bullet}
-            <li style="font-size:0.9em">
-                {bullet.text}
-            </li>
-        {/each}
-    </ul>
-{/each}
+    {#each data["projects"]["entries"] as project}
+        <SubTitle title={project.title} />
+        <ul>
+            {#each project.bullet_points as bullet}
+                <li style="font-size:0.9em">
+                    {bullet.text}
+                </li>
+            {/each}
+        </ul>
+    {/each}
+</section>
 
 <style>
     ul {
