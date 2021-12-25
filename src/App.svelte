@@ -11,6 +11,7 @@
 	import Strengths from "./components/Strengths.svelte";
 	import * as data from "./data.json";
 	import { onMount, SvelteComponent, tick } from "svelte";
+	import Footer from "./components/Footer.svelte";
 
 	const MAX_HEIGHT = 1050;
 	const style = data["style"];
@@ -92,7 +93,7 @@
 			let div = document.createElement("div");
 			div.style.cssText = `margin-top:${total}px`;
 			current_element.parentNode.insertBefore(div, current_element);
-			current_height = 0; 
+			current_height = 0;
 		}
 	}
 
@@ -101,6 +102,7 @@
 	});
 </script>
 
+<Footer />
 <Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
@@ -114,11 +116,6 @@
 		{/each}
 	</div>
 </main>
-
-<div class="footer">
-	Developed with <i class="fa fa-heart" style="color:red" /> and Svelte by yours
-	truly :)
-</div>
 
 <style>
 	/* column styling has a lot of duplicate entities*/
@@ -135,14 +132,13 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.footer {
-		position: absolute;
-		left: 220px;
-		top: 1100px;
-		color: grey;
-	}
+
 	@page {
 		size: A4;
 		margin: 0;
+	}
+	:global(:root) {
+		/* blue: #00bfff; */
+		--main-color: #00bfff;
 	}
 </style>
