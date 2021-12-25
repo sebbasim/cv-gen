@@ -11,26 +11,11 @@
 	import Strengths from "./components/Strengths.svelte";
 	import * as data from "./data.json";
 	import { onMount, SvelteComponent, tick } from "svelte";
-	const MAX_HEIGHT = 1050; 
+	const MAX_HEIGHT = 1050;
 	const style = data["style"];
 	const column_widths: number[] = style.column_widths;
 	let left_flex = column_widths[0] * 96;
 	let right_flex = column_widths[1] * 96;
-	// let difference;
-	// function handle_message(event) {
-	// 	if (current_height > max_height) {
-	// 		difference = current_height - max_height;
-	// 		var div = document.createElement("div");
-	// 		div.style.cssText = `margin-top:${difference}px`;
-	// 		let current_element = document.querySelector(
-	// 			`.left-column div:nth-child(${count_children})`
-	// 		);
-	// 		current_element.parentNode.insertBefore(
-	// 			div,
-	// 			current_element.nextSibling
-	// 		);
-	// 	}
-	// }
 
 	const component_constructor = (key: string): typeof SvelteComponent => {
 		switch (key) {
@@ -74,24 +59,40 @@
 	}
 
 	let current_height = 0;
+	let header_height: number;
 
 	function header_height_handler(event) {
 		current_height += event.detail.height;
+		header_height = event.detail.height;
 	}
 
 	function adjust_height() {
-		for (let i = 1; i < components_left.length; i++) {
-			let current_element = document.querySelector(
-				`.left-column section:nth-child(${i})`
-			);
-			console.log(current_element); 
-			let height = window.getComputedStyle(current_element).height;
-			let height_number = parseInt(height.substring(0, height.length - 2));
-			current_height += height_number; 
+		for (let i = 1; i < components_left.length + 1; i++) {
+			adjust_height_helper(i, "left-column");
+		}
+		current_height = header_height;
+		for (let i = 1; i < components_right.length + 1; i++) {
+			adjust_height_helper(i, "right-column");
+		}
+	}
 
-			if(current_height > MAX_HEIGHT) {
+	function adjust_height_helper(i: number, column: string) {
+		let current_element = document.querySelector(
+			`.${column} section:nth-child(${i})`
+		);
+		console.log(current_element);
+		let height = window.getComputedStyle(current_element).height;
+		let height_number = parseInt(height.substring(0, height.length - 2));
+		current_height += height_number;
 
-			}
+		if (current_height > MAX_HEIGHT) {
+			let difference = current_height - MAX_HEIGHT;
+			let abs_difference = Math.abs(height_number - difference);
+			let total = abs_difference + 120;
+			let div = document.createElement("div");
+			div.style.cssText = `margin-top:${total}px`;
+			current_element.parentNode.insertBefore(div, current_element);
+			current_height = header_height; 
 		}
 	}
 
