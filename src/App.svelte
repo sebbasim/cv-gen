@@ -11,15 +11,35 @@
 	import * as data from "./data.json";
 	let style = data["style"];
 	let column_widths: number[] = style.column_widths;
-	let left_flex = column_widths[0] * 96; 
-	let right_flex = column_widths[1] * 96; 
+	let left_flex = column_widths[0] * 96;
+	let right_flex = column_widths[1] * 96;
+	let max_height = 500;
+	let current_height = 0;
+	let difference;
+	let count_children = 0;
+	function handle_message(event) {
+		count_children++;
+		current_height += event.detail.height;
+		if (current_height > max_height) {
+			difference = current_height - max_height;
+			var div = document.createElement("div");
+			div.style.cssText = `margin-top:${difference}px`;
+			let current_element = document.querySelector(
+				`.left-column div:nth-child(${count_children})`
+			);
+			current_element.parentNode.insertBefore(
+				div,
+				current_element.nextSibling
+			);
+		}
+	}
 </script>
 
 <Header />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
-		<Summary />
-		<Experience />
+		<Summary on:message={handle_message} />
+		<Experience on:message={handle_message} />
 		<Languages />
 		<div style="height:98px" />
 		<Strengths />

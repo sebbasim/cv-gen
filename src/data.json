@@ -233,6 +233,10 @@
                     "level": 3
                 },
                 {
+                    "name": "GraphQL",
+                    "level": 3
+                },
+                {
                     "name": "AWS",
                     "level": 2
                 },
