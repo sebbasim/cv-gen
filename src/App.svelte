@@ -12,6 +12,7 @@
 	import Skills from "./components/Skills.svelte";
 	import Strengths from "./components/Strengths.svelte";
 	import * as data from "./data.json";
+	import { onMount, SvelteComponent } from "svelte";
 	let style = data["style"];
 	let column_widths: number[] = style.column_widths;
 	let left_flex = column_widths[0] * 96;
@@ -36,21 +37,59 @@
 	// 		);
 	// 	}
 	// }
+
+	const component_constructor = (key: string): typeof SvelteComponent => {
+		switch (key) {
+			case "summary":
+				return Summary;
+			case "experience":
+				return Experience;
+			case "education":
+				return Education;
+			case "languages":
+				return Languages;
+			case "strengths":
+				return Strengths;
+			case "projects":
+				return Projects;
+			case "skills":
+				return Skills;
+			case "volunteering":
+				return Volunteering;
+		}
+	};
+
+	let components_left = [];
+	let components_right = [];
+
+	function init(): void {
+		for (const key in data) {
+			const component_data = data[key];
+			component_data["component"] = component_constructor(key);;
+			if (component_data["column"] === "left") {
+				components_left = [...components_left, component_data];
+			} else if (component_data["column"] === "right") {
+				components_right = [...components_right, component_data];
+			}
+		}
+	}
+
+	onMount(() => {
+		init();
+	});
 </script>
 
 <Header />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
-		<Summary />
-		<Experience />
-		<Languages />
-		<Strengths />
-		<Projects />
+		{#each components_left as component_left}
+			<svelte:component this={component_left.component} />
+		{/each}
 	</div>
 	<div class="right-column" style="flex: 0 0 {right_flex}%">
-		<Education />
-		<Skills />
-		<Volunteering />
+		{#each components_right as component_right}
+			<svelte:component this={component_right.component} />
+		{/each}
 	</div>
 </main>
 
