@@ -25,33 +25,11 @@
         <h2>{header.job_title}</h2>
         <br />
         <div id="grid-container">
-            <span
-                ><img
-                    class="icon"
-                    alt="smartphone"
-                    src="assets/icons/phone.svg"
-                />&nbsp; + {header.mobile}</span
+            <span><i class="fas fa-phone icon" />&nbsp; + {header.mobile}</span
             >
-            <span
-                ><img
-                    class="icon"
-                    alt="GitHub"
-                    src="assets/icons/github.svg"
-                />&nbsp; {header.github}</span
-            >
-            <span
-                ><img
-                    class="icon"
-                    alt="inbox"
-                    src="assets/icons/inbox.svg"
-                />&nbsp; {header.email}</span
-            >
-            <span
-                ><img
-                    class="icon"
-                    alt="location"
-                    src="assets/icons/map-marker.svg"
-                />&nbsp; {header.location}</span
+            <span><i class="fab fa-github icon" />&nbsp; {header.github}</span>
+            <span><i class="fas fa-envelope icon" />&nbsp; {header.email}</span>
+            <span><i class="fas fa-location-arrow icon" />&nbsp; {header.location}</span
             >
         </div>
     </div>
