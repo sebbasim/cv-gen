@@ -7,7 +7,7 @@ import Level from "../sub-components/Level.svelte";
 
 <Title title="Skills" />
 
-{#each data["skills"] as skill_group}
+{#each data["skills"]["entries"] as skill_group}
     <SubTitle title={skill_group.group} />
     
         {#each skill_group.skill_set as skill}

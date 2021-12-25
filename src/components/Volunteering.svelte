@@ -6,7 +6,7 @@
 
 <Title title="Volunteering" />
 
-{#each data["volunteering"] as volunteering_entry}
+{#each data["volunteering"]["entries"] as volunteering_entry}
     <VolunteeringEntry {...volunteering_entry} />
 {/each}
 

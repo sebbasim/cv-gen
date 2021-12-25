@@ -19,6 +19,7 @@
         "location": "Antwerp, Belgium"
     },
     "summary": {
+        "column": "left",
         "bullet_points": [
             {
                 "id": 1,
@@ -34,255 +35,276 @@
             }
         ]
     },
-    "experience": [
-        {
-            "title": "Full-stack Engineer",
-            "institution": "Sparklink",
-            "start_date": "01/2020",
-            "end_date": "06/2021",
-            "location": "Antwerp, Belgium",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
-                },
-                {
-                    "id": 2,
-                    "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
-                },
-                {
-                    "id": 3,
-                    "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
-                }
-            ]
-        },
-        {
-            "title": "Salesforce Developer",
-            "institution": "Business&Decision | Brightfox",
-            "start_date": "08/2018",
-            "end_date": "12/2019",
-            "location": "Antwerp, Belgium | Breda, The Netherlands",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "Setting up and maintaining the Salesforce environment and data model for various clients, using both declarative and programmatic tools"
-                },
-                {
-                    "id": 2,
-                    "text": "Development and template building for a document generation tool available on the AppExchange"
-                },
-                {
-                    "id": 3,
-                    "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
-                }
-            ]
-        }
-    ],
-    "education": [
-        {
-            "title": "MSc Business Science",
-            "institution": "University of Leuven",
-            "start_date": "09/2013",
-            "end_date": "06/2018",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "Focused mostly on finance and marketing. I also improved my skills in a variety of domains: statistics, maths, economics, languages, ..."
-                },
-                {
-                    "id": 2,
-                    "text": "Includes a 6-month internship at the finance department of a medium-sized hotel"
-                }
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "id": 1,
-            "name": "English",
-            "level": 5
-        },
-        {
-            "id": 2,
-            "name": "Dutch",
-            "level": 5
-        },
-        {
-            "id": 3,
-            "name": "French",
-            "level": 2
-        },
-        {
-            "id": 4,
-            "name": "German | Chinese",
-            "level": 1
-        }
-    ],
-    "projects": [
-        {
-            "title": "Food Delivery App",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep."
-                },
-                {
-                    "id": 2,
-                    "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
-                }
-            ]
-        },
-        {
-            "title": "CV Builder",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "A CV creator to dynamically build your own CV, including this one. (ongoing)"
-                },
-                {
-                    "id": 2,
-                    "text": "Technologies: Svelte | CSS3 | TypeScript"
-                }
-            ]
-        }
-    ],
-    "volunteering": [
-        {
-            "title": "Coding Teacher",
-            "institution": "CoderDojo / freelance",
-            "start_date": "05/2019",
-            "end_date": "ongoing",
-            "location": "Antwerp, Belgium",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "Teaching kids between 7 - 18 how to code through many different projects"
-                },
-                {
-                    "id": 2,
-                    "text": "Creating and teaching a personalized programming course for beginners"
-                }
-            ]
-        },
-        {
-            "title": "English Teacher",
-            "institution": "Aiesec / Vietlish",
-            "start_date": "06/2018",
-            "end_date": "08/2018",
-            "location": "Ho Chi Minh City, Vietnam",
-            "bullet_points": [
-                {
-                    "id": 1,
-                    "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
-                }
-            ]
-        }
-    ],
-    "skills": [
-        {
-            "group": "Programming Languages",
-            "skill_set": [
-                {
-                    "name": "Java / Apex (Salesforce)",
-                    "level": 4
-                },
-                {
-                    "name": "JavaScript / TypeScript",
-                    "level": 4
-                },
-                {
-                    "name": "Rust",
-                    "level": 2
-                }
-            ]
-        },
-        {
-            "group": "Front-end",
-            "skill_set": [
-                {
-                    "name": "HTML5 / CSS3",
-                    "level": 4
-                },
-                {
-                    "name": "Svelte",
-                    "level": 3
-                },
-                {
-                    "name": "LWC (Salesforce)",
-                    "level": 3
-                },
-                {
-                    "name": "React (Native)",
-                    "level": 1
-                },
-                {
-                    "name": "Flutter",
-                    "level": 1
-                }
-            ]
-        },
-        {
-            "group": "Back-end",
-            "skill_set": [
-                {
-                    "name": "Salesforce Database",
-                    "level": 5
-                },
-                {
-                    "name": "SQL / SOQL",
-                    "level": 3
-                },
-                {
-                    "name": "GraphQL",
-                    "level": 3
-                },
-                {
-                    "name": "AWS",
-                    "level": 2
-                },
-                {
-                    "name": "Firebase",
-                    "level": 1
-                }
-            ]
-        },
-        {
-            "group": "Other",
-            "skill_set": [
-                {
-                    "name": "Jira / Trello",
-                    "level": 3
-                },
-                {
-                    "name": "Git / GitHub",
-                    "level": 3
-                },
-                {
-                    "name": "Blender",
-                    "level": 1
-                },
-                {
-                    "name": "Game Development",
-                    "level": 1
-                }
-            ]
-        }
-    ],
-    "strengths": [
-        {
-            "title": "Generalist",
-            "icon": "fas fa-gem",
-            "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
-        },
-        {
-            "title": "Fast Learner",
-            "icon": "fas fa-chart-line",
-            "description": "I'm able to quickly pick up matter, even if it is well outside of my area of expertise."
-        },
-        {
-            "title": "Autodidact",
-            "icon": "fa fa-atom",
-            "description": "I'm good at learning things by myself, being at the centre of my own learning."
-        }
-    ]
+    "experience": {
+        "column": "left",
+        "entries": [
+            {
+                "title": "Full-stack Engineer",
+                "institution": "Sparklink",
+                "start_date": "01/2020",
+                "end_date": "06/2021",
+                "location": "Antwerp, Belgium",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                    },
+                    {
+                        "id": 2,
+                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                    },
+                    {
+                        "id": 3,
+                        "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
+                    }
+                ]
+            },
+            {
+                "title": "Salesforce Developer",
+                "institution": "Business&Decision | Brightfox",
+                "start_date": "08/2018",
+                "end_date": "12/2019",
+                "location": "Antwerp, Belgium | Breda, The Netherlands",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "Setting up and maintaining the Salesforce environment and data model for various clients, using both declarative and programmatic tools"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Development and template building for a document generation tool available on the AppExchange"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
+                    }
+                ]
+            }
+        ]
+    },
+    "education": {
+        "column": "right",
+        "entries": [
+            {
+                "title": "MSc Business Science",
+                "institution": "University of Leuven",
+                "start_date": "09/2013",
+                "end_date": "06/2018",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "Focused mostly on finance and marketing. I also improved my skills in a variety of domains: statistics, maths, economics, languages, ..."
+                    },
+                    {
+                        "id": 2,
+                        "text": "Includes a 6-month internship at the finance department of a medium-sized hotel"
+                    }
+                ]
+            }
+        ]
+    },
+    "languages": {
+        "column": "left",
+        "entries": [
+            {
+                "id": 1,
+                "name": "English",
+                "level": 5
+            },
+            {
+                "id": 2,
+                "name": "Dutch",
+                "level": 5
+            },
+            {
+                "id": 3,
+                "name": "French",
+                "level": 2
+            },
+            {
+                "id": 4,
+                "name": "German | Chinese",
+                "level": 1
+            }
+        ]
+    },
+    "strengths": {
+        "column": "left",
+        "entries": [
+            {
+                "title": "Generalist",
+                "icon": "fas fa-gem",
+                "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
+            },
+            {
+                "title": "Fast Learner",
+                "icon": "fas fa-chart-line",
+                "description": "I'm able to quickly pick up matter, even if it is well outside of my area of expertise."
+            },
+            {
+                "title": "Autodidact",
+                "icon": "fa fa-atom",
+                "description": "I'm good at learning things by myself, being at the centre of my own learning."
+            }
+        ]
+    },
+    "projects": {
+        "column": "left",
+        "entries": [
+            {
+                "title": "Food Delivery App",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep."
+                    },
+                    {
+                        "id": 2,
+                        "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
+                    }
+                ]
+            },
+            {
+                "title": "CV Builder",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "A CV creator to dynamically build your own CV, including this one. (ongoing)"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Technologies: Svelte | CSS3 | TypeScript"
+                    }
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "column": "right",
+        "entries": [
+            {
+                "group": "Programming Languages",
+                "skill_set": [
+                    {
+                        "name": "Java / Apex (Salesforce)",
+                        "level": 4
+                    },
+                    {
+                        "name": "JavaScript / TypeScript",
+                        "level": 4
+                    },
+                    {
+                        "name": "Rust",
+                        "level": 2
+                    }
+                ]
+            },
+            {
+                "group": "Front-end",
+                "skill_set": [
+                    {
+                        "name": "HTML5 / CSS3",
+                        "level": 4
+                    },
+                    {
+                        "name": "Svelte",
+                        "level": 3
+                    },
+                    {
+                        "name": "LWC (Salesforce)",
+                        "level": 3
+                    },
+                    {
+                        "name": "React (Native)",
+                        "level": 1
+                    },
+                    {
+                        "name": "Flutter",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "group": "Back-end",
+                "skill_set": [
+                    {
+                        "name": "Salesforce Database",
+                        "level": 5
+                    },
+                    {
+                        "name": "SQL / SOQL",
+                        "level": 3
+                    },
+                    {
+                        "name": "GraphQL",
+                        "level": 3
+                    },
+                    {
+                        "name": "AWS",
+                        "level": 2
+                    },
+                    {
+                        "name": "Firebase",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "group": "Other",
+                "skill_set": [
+                    {
+                        "name": "Jira / Trello",
+                        "level": 3
+                    },
+                    {
+                        "name": "Git / GitHub",
+                        "level": 3
+                    },
+                    {
+                        "name": "Blender",
+                        "level": 1
+                    },
+                    {
+                        "name": "Game Development",
+                        "level": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "volunteering": {
+        "column": "right",
+        "entries": [
+            {
+                "title": "Coding Teacher",
+                "institution": "CoderDojo / freelance",
+                "start_date": "05/2019",
+                "end_date": "ongoing",
+                "location": "Antwerp, Belgium",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "Teaching kids between 7 - 18 how to code through many different projects"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Creating and teaching a personalized programming course for beginners"
+                    }
+                ]
+            },
+            {
+                "title": "English Teacher",
+                "institution": "Aiesec / Vietlish",
+                "start_date": "06/2018",
+                "end_date": "08/2018",
+                "location": "Ho Chi Minh City, Vietnam",
+                "bullet_points": [
+                    {
+                        "id": 1,
+                        "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
+                    }
+                ]
+            }
+        ]
+    }
 }

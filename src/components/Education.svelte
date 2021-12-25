@@ -7,7 +7,7 @@
 
 <Title title="Education" />
 
-{#each data["education"] as education}
+{#each data["education"]["entries"] as education}
     <EducationEntry {...education} />
 {/each}
 

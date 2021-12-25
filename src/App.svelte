@@ -1,4 +1,7 @@
 <script lang="ts">
+	// onMount App => count children in left and right column, then switch in height messaging function
+	// dynamically insert svelte components based on json output
+	// scss support (variables) | rm duplicate css
 	import Header from "./components/Header.svelte";
 	import Summary from "./components/Summary.svelte";
 	import Experience from "./components/Experience.svelte";
@@ -13,42 +16,40 @@
 	let column_widths: number[] = style.column_widths;
 	let left_flex = column_widths[0] * 96;
 	let right_flex = column_widths[1] * 96;
-	let max_height = 500;
-	let current_height = 0;
-	let difference;
-	let count_children = 0;
-	function handle_message(event) {
-		count_children++;
-		current_height += event.detail.height;
-		if (current_height > max_height) {
-			difference = current_height - max_height;
-			var div = document.createElement("div");
-			div.style.cssText = `margin-top:${difference}px`;
-			let current_element = document.querySelector(
-				`.left-column div:nth-child(${count_children})`
-			);
-			current_element.parentNode.insertBefore(
-				div,
-				current_element.nextSibling
-			);
-		}
-	}
+	// let max_height = 500;
+	// let current_height = 0;
+	// let difference;
+	// let count_children = 0;
+	// function handle_message(event) {
+	// 	count_children++;
+	// 	current_height += event.detail.height;
+	// 	if (current_height > max_height) {
+	// 		difference = current_height - max_height;
+	// 		var div = document.createElement("div");
+	// 		div.style.cssText = `margin-top:${difference}px`;
+	// 		let current_element = document.querySelector(
+	// 			`.left-column div:nth-child(${count_children})`
+	// 		);
+	// 		current_element.parentNode.insertBefore(
+	// 			div,
+	// 			current_element.nextSibling
+	// 		);
+	// 	}
+	// }
 </script>
 
 <Header />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
-		<Summary on:message={handle_message} />
-		<Experience on:message={handle_message} />
+		<Summary />
+		<Experience />
 		<Languages />
-		<div style="height:98px" />
 		<Strengths />
 		<Projects />
 	</div>
 	<div class="right-column" style="flex: 0 0 {right_flex}%">
 		<Education />
 		<Skills />
-		<div style="height:179px" />
 		<Volunteering />
 	</div>
 </main>

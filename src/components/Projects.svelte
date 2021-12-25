@@ -6,7 +6,7 @@
 
 <Title title="Personal Projects" />
 
-{#each data["projects"] as project}
+{#each data["projects"]["entries"] as project}
     <SubTitle title={project.title} />
     <ul>
         {#each project.bullet_points as bullet}

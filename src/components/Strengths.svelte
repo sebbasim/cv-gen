@@ -6,7 +6,7 @@
 
 <Title title="Strengths" />
 
-{#each data["strengths"] as strength}
+{#each data["strengths"]["entries"] as strength}
     <div class="flex-container">
         <i class="{strength.icon} fa-lg" style="color:#00bfff" />
         <div>

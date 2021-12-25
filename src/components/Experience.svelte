@@ -15,7 +15,7 @@
 <div bind:clientHeight={height}>
     <Title title="Experience" />
 
-    {#each data["experience"] as experience}
+    {#each data["experience"]["entries"] as experience}
         <ExperienceEntry {...experience} />
     {/each}
 </div>

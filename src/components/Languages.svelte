@@ -14,7 +14,7 @@
 <Title title="Languages" />
 
 <div id="grid-container">
-    {#each data["languages"] as language}
+    {#each data["languages"]["entries"] as language}
         <div id="flex-container">
             <div id="left-column">
                 <b>{language.name}</b> <br />
