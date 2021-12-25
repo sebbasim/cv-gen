@@ -9,7 +9,7 @@
 
     {#each data["strengths"]["entries"] as strength}
         <div class="flex-container">
-            <i class="{strength.icon} fa-lg" style="color:#00bfff" />
+            <i class="{strength.icon} fa-lg icon"/>
             <div>
                 <SubTitle title={strength.title} />
                 {@html strength.description}
@@ -27,5 +27,9 @@
         justify-content: space-between;
         margin-left: 5px;
         margin-bottom: 15px;
+    }
+
+    .icon {
+        color: var(--main-color);
     }
 </style>

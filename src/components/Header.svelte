@@ -49,7 +49,7 @@
     }
     .icon {
         width: 15px;
-        color: #00bfff;
+        color: var(--main-color);
         vertical-align: middle;
     }
     #flex-container {
@@ -77,6 +77,6 @@
         font-weight: 800;
         font-family: "Roboto", sans-serif;
         margin: 0px 10px 0px 0px;
-        color: #00bfff;
+        color: var(--main-color);
     }
 </style>

@@ -24,7 +24,7 @@
 
 <style>
     .institution {
-        color: #00bfff;
+        color: var(--main-color);
         font-weight: bold;
         font-size: 15px;
     }
