@@ -1,5 +1,6 @@
 {
     "style": {
+        "main_color": "#d49114", 
         "font_family": "Segoe UI",
         "header_1": {
             "font_size": "1.8em",

@@ -70,11 +70,11 @@
 
 	// further investigate why length + 2 for 3rd page adjustments
 	function adjust_height() {
-		for (let i = 1; i < components_left.length + 2; i++) {
+		for (let i = 1; i < components_left.length + 1; i++) {
 			adjust_height_helper(i, "left-column");
 		}
 		current_height = header_height;
-		for (let i = 1; i < components_right.length + 2; i++) {
+		for (let i = 1; i < components_right.length + 1; i++) {
 			adjust_height_helper(i, "right-column");
 		}
 	}
@@ -100,8 +100,11 @@
 	onMount(() => {
 		init();
 	});
-</script>
+	// @ts-ignore
+	let main_color = style.main_color; 
+	$: document.documentElement.style.setProperty('--main-color', main_color); 
 
+</script>
 <Footer />
 <Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
@@ -139,6 +142,6 @@
 	}
 	:global(:root) {
 		/* blue: #00bfff; */
-		--main-color: #00bfff;
+		--main-color: var(--main_color);
 	}
 </style>
