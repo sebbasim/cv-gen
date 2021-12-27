@@ -6,7 +6,7 @@
 	import Education from "./components/Education.svelte";
 	import Languages from "./components/Languages.svelte";
 	import Projects from "./components/Projects.svelte";
-	import Volunteering from "./components/Volunteering.svelte";
+	import Dynamic from "./components/Dynamic.svelte";
 	import Skills from "./components/Skills.svelte";
 	import Strengths from "./components/Strengths.svelte";
 	import Footer from "./components/Footer.svelte";
@@ -26,14 +26,14 @@
 	interface Component {
 		column: "left" | "right";
 		component: string;
-		bullet_points?: { id: number; text: string }[];
+		bullet_points?: { text: string }[];
 		entries?: {
 			title: string;
 			institution?: string;
 			start_date?: string;
 			end_date?: string;
 			location?: string;
-			bullet_points?: { id: number; text: string }[];
+			bullet_points?: { text: string }[];
 			icon?: string;
 			description?: string;
 		};
@@ -60,8 +60,8 @@
 				return Projects;
 			case "skills":
 				return Skills;
-			case "volunteering":
-				return Volunteering;
+			case "dynamic":
+				return Dynamic;
 		}
 	};
 
@@ -106,12 +106,12 @@
 			`.${column} section:nth-child(${i})`
 		);
 		const height = window.getComputedStyle(current_element).height;
-		const height_number = parseInt(height.substring(0, height.length - 2));
+		const height_number = +height.substring(0, height.length - 2);
 		current_height += height_number;
 		if (current_height > MAX_HEIGHT) {
 			const difference = current_height - MAX_HEIGHT;
 			const abs_difference = Math.abs(height_number - difference);
-			const total = abs_difference + 120;
+			const total = Math.floor(abs_difference + 120);
 			const div = document.createElement("div");
 			div.style.cssText = `margin-top:${total}px`;
 			current_element.parentNode.insertBefore(div, current_element);

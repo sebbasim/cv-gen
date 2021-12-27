@@ -1,6 +1,6 @@
 {
     "style": {
-        "main_color": "#d49114", 
+        "main_color": "#d49114",
         "font_family": "Segoe UI",
         "header_1": {
             "font_size": "1.8em",
@@ -14,24 +14,36 @@
     "header": {
         "name": "Sebastiaan Simons",
         "job_title": "Full-stack engineer",
-        "mobile": "Some mobile number",
-        "email": "Some email",
-        "github": "github.com/SebastiaanSimons",
-        "location": "Antwerp, Belgium"
+        "image": "assets/images/profile_picture.jpg",
+        "information": [
+            {
+                "text": "+ mobile number",
+                "icon": "fas fa-phone icon"
+            },
+            {
+                "text": "github.com/SebastiaanSimons",
+                "icon": "fab fa-github icon"
+            },
+            {
+                "text": "email",
+                "icon": "fas fa-envelope icon"
+            },
+            {
+                "text": "Antwerp, Belgium",
+                "icon": "fas fa-location-arrow icon"
+            }
+        ]
     },
     "summary": {
         "column": "left",
         "bullet_points": [
             {
-                "id": 1,
                 "text": "3+ years of experience as a software / full-stack engineer."
             },
             {
-                "id": 2,
                 "text": "Done several complex (Salesforce) implementations for a wide variety of companies"
             },
             {
-                "id": 3,
                 "text": "Generalist, fast learner, autodidact"
             }
         ]
@@ -47,15 +59,12 @@
                 "location": "Antwerp, Belgium",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
                     },
                     {
-                        "id": 2,
                         "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
                     },
                     {
-                        "id": 3,
                         "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
                     }
                 ]
@@ -93,11 +102,9 @@
                 "end_date": "06/2018",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "Focused mostly on finance and marketing. I also improved my skills in a variety of domains: statistics, maths, economics, languages, ..."
                     },
                     {
-                        "id": 2,
                         "text": "Includes a 6-month internship at the finance department of a medium-sized hotel"
                     }
                 ]
@@ -152,11 +159,9 @@
                 "title": "Food Delivery App",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep."
                     },
                     {
-                        "id": 2,
                         "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
                     }
                 ]
@@ -165,11 +170,9 @@
                 "title": "CV Builder",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "A CV creator to dynamically build your own CV, including this one. (ongoing)"
                     },
                     {
-                        "id": 2,
                         "text": "Technologies: Svelte | CSS3 | TypeScript"
                     }
                 ]
@@ -269,7 +272,8 @@
             }
         ]
     },
-    "volunteering": {
+    "dynamic": {
+        "title" : "Volunteering",
         "column": "right",
         "entries": [
             {
@@ -280,11 +284,9 @@
                 "location": "Antwerp, Belgium",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "Teaching kids between 7 - 18 how to code through many different projects"
                     },
                     {
-                        "id": 2,
                         "text": "Creating and teaching a personalized programming course for beginners"
                     }
                 ]
@@ -297,7 +299,6 @@
                 "location": "Ho Chi Minh City, Vietnam",
                 "bullet_points": [
                     {
-                        "id": 1,
                         "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
                     }
                 ]
