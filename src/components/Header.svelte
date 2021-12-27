@@ -25,16 +25,13 @@
         <h2>{header.job_title}</h2>
         <br />
         <div class="grid-container">
-            <span><i class="fas fa-phone icon" />&nbsp; + {header.mobile}</span>
-            <span><i class="fab fa-github icon" />&nbsp; {header.github}</span>
-            <span><i class="fas fa-envelope icon" />&nbsp; {header.email}</span>
-            <span
-                ><i class="fas fa-location-arrow icon" />&nbsp; {header.location}</span
-            >
+            {#each header["information"] as info}
+            <span><i class={info.icon} />&nbsp;  {info.text}</span> 
+            {/each}       
         </div>
     </div>
     <div>
-        <img src="assets/images/profile_picture.jpg" alt="profile" />
+        <img src={header["image"]} alt="profile" />
     </div>
 </div>
 
