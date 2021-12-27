@@ -12,6 +12,7 @@
         ]
     },
     "header": {
+        "component_title": "header", 
         "name": "Sebastiaan Simons",
         "job_title": "Full-stack engineer",
         "image": "assets/images/profile_picture.jpg",
@@ -35,6 +36,7 @@
         ]
     },
     "summary": {
+        "component_title": "summary", 
         "column": "left",
         "bullet_points": [
             {
@@ -49,6 +51,8 @@
         ]
     },
     "experience": {
+        "component_title": "dynamic", 
+        "title": "Experience", 
         "column": "left",
         "entries": [
             {
@@ -93,6 +97,8 @@
         ]
     },
     "education": {
+        "component_title": "dynamic", 
+        "title": "Education", 
         "column": "right",
         "entries": [
             {
@@ -112,6 +118,7 @@
         ]
     },
     "languages": {
+        "component_title": "languages", 
         "column": "left",
         "level_entries": [
             {
@@ -133,6 +140,7 @@
         ]
     },
     "strengths": {
+        "component_title": "strengths", 
         "column": "left",
         "entries": [
             {
@@ -153,6 +161,7 @@
         ]
     },
     "projects": {
+        "component_title": "projects", 
         "column": "left",
         "entries": [
             {
@@ -180,6 +189,7 @@
         ]
     },
     "skills": {
+        "component_title": "skills", 
         "column": "right",
         "level_groups": [
             {
@@ -272,7 +282,8 @@
             }
         ]
     },
-    "dynamic": {
+    "volunteering": {
+        "component_title": "dynamic", 
         "title" : "Volunteering",
         "column": "right",
         "entries": [

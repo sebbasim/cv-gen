@@ -2,8 +2,6 @@
 	import { onMount, SvelteComponent, tick } from "svelte";
 	import Header from "./components/Header.svelte";
 	import Summary from "./components/Summary.svelte";
-	import Experience from "./components/Experience.svelte";
-	import Education from "./components/Education.svelte";
 	import Languages from "./components/Languages.svelte";
 	import Projects from "./components/Projects.svelte";
 	import Dynamic from "./components/Dynamic.svelte";
@@ -48,10 +46,6 @@
 		switch (key) {
 			case "summary":
 				return Summary;
-			case "experience":
-				return Experience;
-			case "education":
-				return Education;
 			case "languages":
 				return Languages;
 			case "strengths":
@@ -68,7 +62,8 @@
 	const init = async () => {
 		for (const key in data) {
 			const component_data = data[key];
-			component_data["component"] = component_constructor(key);
+			component_data["component"] = component_constructor(component_data["component_title"]);
+			component_data["key"] = key;
 			if (component_data["column"] === "left") {
 				components_left = [...components_left, component_data];
 			} else if (component_data["column"] === "right") {
@@ -129,12 +124,12 @@
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
 		{#each components_left as component_left}
-			<svelte:component this={component_left.component} />
+			<svelte:component this={component_left.component} component_title={component_left["key"]} />
 		{/each}
 	</div>
 	<div class="right-column" style="flex: 0 0 {right_flex}%">
 		{#each components_right as component_right}
-			<svelte:component this={component_right.component} />
+			<svelte:component this={component_right.component} component_title={component_right["key"]}/>
 		{/each}
 	</div>
 </main>
