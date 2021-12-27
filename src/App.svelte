@@ -106,12 +106,12 @@
 			`.${column} section:nth-child(${i})`
 		);
 		const height = window.getComputedStyle(current_element).height;
-		const height_number = parseInt(height.substring(0, height.length - 2));
+		const height_number = +height.substring(0, height.length - 2);
 		current_height += height_number;
 		if (current_height > MAX_HEIGHT) {
 			const difference = current_height - MAX_HEIGHT;
 			const abs_difference = Math.abs(height_number - difference);
-			const total = abs_difference + 120;
+			const total = Math.floor(abs_difference + 120);
 			const div = document.createElement("div");
 			div.style.cssText = `margin-top:${total}px`;
 			current_element.parentNode.insertBefore(div, current_element);
