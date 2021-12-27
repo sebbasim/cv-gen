@@ -20,7 +20,6 @@
         margin-top: 5px;
         margin-bottom: 10px;
     }
-
     .location {
         margin-left: 10px;
     }

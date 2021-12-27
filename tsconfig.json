@@ -10,10 +10,6 @@
     "public/*"
   ],
   "compilerOptions": {
-    "types": [
-      "node",
-      "svelte"
-    ],
     "rootDir": "src",
     "lib": [
       "es2017",
@@ -28,7 +24,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "stripInternal": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

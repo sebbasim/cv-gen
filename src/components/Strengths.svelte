@@ -1,7 +1,7 @@
 <script lang="ts">
     import Title from "../style-components/Title.svelte";
-    import * as data from "../data.json";
     import SubTitle from "../style-components/SubTitle.svelte";
+    import * as data from "../data.json";
 </script>
 
 <section>
@@ -9,7 +9,7 @@
 
     {#each data["strengths"]["entries"] as strength}
         <div class="flex-container">
-            <i class="{strength.icon} fa-lg icon"/>
+            <i class="{strength.icon} fa-lg icon" />
             <div>
                 <SubTitle title={strength.title} />
                 {@html strength.description}
@@ -28,7 +28,6 @@
         margin-left: 5px;
         margin-bottom: 15px;
     }
-
     .icon {
         color: var(--main-color);
     }

@@ -106,24 +106,20 @@
     },
     "languages": {
         "column": "left",
-        "entries": [
+        "level_entries": [
             {
-                "id": 1,
                 "name": "English",
                 "level": 5
             },
             {
-                "id": 2,
                 "name": "Dutch",
                 "level": 5
             },
             {
-                "id": 3,
                 "name": "French",
                 "level": 2
             },
             {
-                "id": 4,
                 "name": "German | Chinese",
                 "level": 1
             }
@@ -182,10 +178,10 @@
     },
     "skills": {
         "column": "right",
-        "entries": [
+        "level_groups": [
             {
                 "group": "Programming Languages",
-                "skill_set": [
+                "level_entries": [
                     {
                         "name": "Java / Apex (Salesforce)",
                         "level": 4
@@ -202,7 +198,7 @@
             },
             {
                 "group": "Front-end",
-                "skill_set": [
+                "level_entries": [
                     {
                         "name": "HTML5 / CSS3",
                         "level": 4
@@ -227,7 +223,7 @@
             },
             {
                 "group": "Back-end",
-                "skill_set": [
+                "level_entries": [
                     {
                         "name": "Salesforce Database",
                         "level": 5
@@ -252,7 +248,7 @@
             },
             {
                 "group": "Other",
-                "skill_set": [
+                "level_entries": [
                     {
                         "name": "Jira / Trello",
                         "level": 3

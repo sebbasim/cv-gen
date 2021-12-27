@@ -1,17 +1,17 @@
 <script lang="ts">
     import Title from "../style-components/Title.svelte";
-    import * as data from "../data.json";
     import SubTitle from "../style-components/SubTitle.svelte";
     import Level from "../sub-components/Level.svelte";
+    import * as data from "../data.json";
 </script>
 
 <section>
     <Title title="Skills" />
 
-    {#each data["skills"]["entries"] as skill_group}
+    {#each data["skills"]["level_groups"] as skill_group}
         <SubTitle title={skill_group.group} />
 
-        {#each skill_group.skill_set as skill}
+        {#each skill_group.level_entries as skill}
             <div class="flex-container">
                 <span class="skill-name"> {skill.name} </span>
                 <Level level={skill.level} />

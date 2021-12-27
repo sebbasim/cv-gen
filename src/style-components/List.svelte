@@ -3,7 +3,7 @@
         id: number;
         text: string;
     }[];
-    export let font_size = "0.9em"; 
+    export let font_size = "0.9em";
 </script>
 
 <ul>
@@ -15,11 +15,11 @@
 </ul>
 
 <style>
-    li {
-        margin-bottom: 5px;
-    }
     ul {
         padding-left: 20px;
         margin: 10px 0px;
+    }
+    li {
+        margin-bottom: 5px;
     }
 </style>

@@ -1,10 +1,10 @@
 <script lang="ts">
     import { createEventDispatcher, onMount } from "svelte";
-
     import * as data from "../data.json";
-    let header = data["header"];
-    let style = data["style"];
-    let height;
+
+    const header = data["header"];
+    const style = data["style"];
+    let height: number;
 
     const dispatch = createEventDispatcher();
 
@@ -16,7 +16,7 @@
 </script>
 
 <div
-    id="flex-container"
+    class="flex-container"
     style="font-family:{style.font_family}"
     bind:clientHeight={height}
 >
@@ -24,45 +24,37 @@
         <h1>{header.name}</h1>
         <h2>{header.job_title}</h2>
         <br />
-        <div id="grid-container">
-            <span><i class="fas fa-phone icon" />&nbsp; + {header.mobile}</span
-            >
+        <div class="grid-container">
+            <span><i class="fas fa-phone icon" />&nbsp; + {header.mobile}</span>
             <span><i class="fab fa-github icon" />&nbsp; {header.github}</span>
             <span><i class="fas fa-envelope icon" />&nbsp; {header.email}</span>
-            <span><i class="fas fa-location-arrow icon" />&nbsp; {header.location}</span
+            <span
+                ><i class="fas fa-location-arrow icon" />&nbsp; {header.location}</span
             >
         </div>
     </div>
     <div>
-        <img
-            class="profile-picture"
-            src="assets/images/profile_picture.jpg"
-            alt="profile"
-        />
+        <img src="assets/images/profile_picture.jpg" alt="profile" />
     </div>
 </div>
 
 <style>
-    .profile-picture {
-        width: 150px;
-        border-radius: 100px;
-    }
-    .icon {
-        width: 15px;
-        color: var(--main-color);
-        vertical-align: middle;
-    }
-    #flex-container {
+    .flex-container {
         display: flex;
         justify-content: space-between;
         width: 195mm;
         font-family: "Roboto", sans-serif;
     }
-    #grid-container {
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         column-gap: 30px;
+    }
+    .icon {
+        width: 15px;
+        color: var(--main-color);
+        vertical-align: middle;
     }
     h1 {
         text-transform: uppercase;
@@ -78,5 +70,9 @@
         font-family: "Roboto", sans-serif;
         margin: 0px 10px 0px 0px;
         color: var(--main-color);
+    }
+    img {
+        width: 150px;
+        border-radius: 100px;
     }
 </style>

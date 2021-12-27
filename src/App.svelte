@@ -1,5 +1,5 @@
 <script lang="ts">
-	// scss support (variables) | rm duplicate css
+	import { onMount, SvelteComponent, tick } from "svelte";
 	import Header from "./components/Header.svelte";
 	import Summary from "./components/Summary.svelte";
 	import Experience from "./components/Experience.svelte";
@@ -9,15 +9,40 @@
 	import Volunteering from "./components/Volunteering.svelte";
 	import Skills from "./components/Skills.svelte";
 	import Strengths from "./components/Strengths.svelte";
-	import * as data from "./data.json";
-	import { onMount, SvelteComponent, tick } from "svelte";
 	import Footer from "./components/Footer.svelte";
+	import * as data from "./data.json";
 
 	const MAX_HEIGHT = 1050;
 	const style = data["style"];
 	const column_widths: number[] = style.column_widths;
-	let left_flex = column_widths[0] * 96;
-	let right_flex = column_widths[1] * 96;
+	const left_flex = column_widths[0] * 96;
+	const right_flex = column_widths[1] * 96;
+	const main_color = style.main_color;
+	document.documentElement.style.setProperty("--main-color", main_color);
+
+	let components_left: Component[] = [];
+	let components_right: Component[] = [];
+
+	interface Component {
+		column: "left" | "right";
+		component: string;
+		bullet_points?: { id: number; text: string }[];
+		entries?: {
+			title: string;
+			institution?: string;
+			start_date?: string;
+			end_date?: string;
+			location?: string;
+			bullet_points?: { id: number; text: string }[];
+			icon?: string;
+			description?: string;
+		};
+		level_entries?: { name: string; level: number }[];
+		level_groups?: {
+			group: string;
+			level_entries: { name: string; level: number }[];
+		}[];
+	}
 
 	const component_constructor = (key: string): typeof SvelteComponent => {
 		switch (key) {
@@ -40,10 +65,7 @@
 		}
 	};
 
-	let components_left = [];
-	let components_right = [];
-
-	async function init() {
+	const init = async () => {
 		for (const key in data) {
 			const component_data = data[key];
 			component_data["component"] = component_constructor(key);
@@ -58,18 +80,18 @@
 		// To wait for the state changes to apply, we wait for the promise returned from tick() to be resolved.
 		await tick();
 		adjust_height();
-	}
+	};
 
 	let current_height = 0;
 	let header_height: number;
 
-	function header_height_handler(event) {
+	const header_height_handler = (event: { detail: { height: number } }) => {
 		current_height += event.detail.height;
 		header_height = event.detail.height;
-	}
+	};
 
-	// further investigate why length + 2 for 3rd page adjustments
-	function adjust_height() {
+	//(V0.2) further investigate why length + 2 for 3rd page adjustments | 3rd+ page support
+	const adjust_height = () => {
 		for (let i = 1; i < components_left.length + 1; i++) {
 			adjust_height_helper(i, "left-column");
 		}
@@ -77,34 +99,31 @@
 		for (let i = 1; i < components_right.length + 1; i++) {
 			adjust_height_helper(i, "right-column");
 		}
-	}
+	};
 
-	function adjust_height_helper(i: number, column: string) {
-		let current_element = document.querySelector(
+	const adjust_height_helper = (i: number, column: string) => {
+		const current_element = document.querySelector(
 			`.${column} section:nth-child(${i})`
 		);
-		let height = window.getComputedStyle(current_element).height;
-		let height_number = parseInt(height.substring(0, height.length - 2));
+		const height = window.getComputedStyle(current_element).height;
+		const height_number = parseInt(height.substring(0, height.length - 2));
 		current_height += height_number;
 		if (current_height > MAX_HEIGHT) {
-			let difference = current_height - MAX_HEIGHT;
-			let abs_difference = Math.abs(height_number - difference);
-			let total = abs_difference + 120;
-			let div = document.createElement("div");
+			const difference = current_height - MAX_HEIGHT;
+			const abs_difference = Math.abs(height_number - difference);
+			const total = abs_difference + 120;
+			const div = document.createElement("div");
 			div.style.cssText = `margin-top:${total}px`;
 			current_element.parentNode.insertBefore(div, current_element);
 			current_height = 0;
 		}
-	}
+	};
 
 	onMount(() => {
 		init();
 	});
-	// @ts-ignore
-	let main_color = style.main_color; 
-	$: document.documentElement.style.setProperty('--main-color', main_color); 
-
 </script>
+
 <Footer />
 <Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
@@ -121,7 +140,6 @@
 </main>
 
 <style>
-	/* column styling has a lot of duplicate entities*/
 	main {
 		display: flex;
 		width: 195mm;
@@ -135,7 +153,6 @@
 		display: flex;
 		flex-direction: column;
 	}
-
 	@page {
 		size: A4;
 		margin: 0;
