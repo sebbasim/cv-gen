@@ -6,7 +6,7 @@ A CV generator built with Svelte.
 
 1. Clone this repo 
 ```
-git clone https://github.com/SebastiaanSimons/cv-generator.git
+git clone https://github.com/sebbasim/cv-generator.git
 ```
 2. Move into directory 
 ```
