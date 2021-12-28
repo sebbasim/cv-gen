@@ -85,7 +85,7 @@
 		header_height = event.detail.height;
 	};
 
-	//(V0.2) further investigate why length + 2 for 3rd page adjustments | 3rd+ page support
+	//(v0.2) further investigate why length + 2 for 3rd page adjustments | 3rd+ page support
 	const adjust_height = () => {
 		for (let i = 1; i < components_left.length + 1; i++) {
 			adjust_height_helper(i, "left-column");
@@ -138,6 +138,7 @@
 	main {
 		display: flex;
 		width: 195mm;
+		color: rgb(88, 86, 86);
 	}
 	.left-column {
 		display: flex;

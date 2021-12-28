@@ -41,12 +41,14 @@
         justify-content: space-between;
         width: 195mm;
         font-family: "Roboto", sans-serif;
+        color: rgb(88, 86, 86);
     }
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         column-gap: 30px;
+        row-gap: 5px;
     }
     .icon {
         width: 15px;
