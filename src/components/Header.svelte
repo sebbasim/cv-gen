@@ -1,5 +1,6 @@
 <script lang="ts">
     import { createEventDispatcher, onMount } from "svelte";
+    import Icon from "@iconify/svelte";
     import * as data from "../data.json";
 
     const header = data["header"];
@@ -23,11 +24,12 @@
     <div>
         <h1>{header.name}</h1>
         <h2>{header.job_title}</h2>
-        <br />
         <div class="grid-container">
             {#each header["information"] as info}
-            <span><i class={info.icon} />&nbsp;  {info.text}</span> 
-            {/each}       
+                <span
+                    ><span class="icon"><Icon icon={info.icon} width="18" /> </span> {info.text}
+                </span>
+            {/each}
         </div>
     </div>
     <div>
@@ -51,7 +53,6 @@
         row-gap: 5px;
     }
     .icon {
-        width: 15px;
         color: var(--main-color);
         vertical-align: middle;
     }
@@ -67,7 +68,7 @@
         font-size: 1em;
         font-weight: 800;
         font-family: "Roboto", sans-serif;
-        margin: 0px 10px 0px 0px;
+        margin: 0px 10px 10px 0px;
         color: var(--main-color);
     }
     img {

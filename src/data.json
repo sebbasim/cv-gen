@@ -19,19 +19,19 @@
         "information": [
             {
                 "text": "+ mobile number",
-                "icon": "fas fa-phone icon"
+                "icon": "clarity:phone-handset-solid"
             },
             {
-                "text": "github.com/SebastiaanSimons",
-                "icon": "fab fa-github icon"
+                "text": "github.com/sebbasim",
+                "icon": "akar-icons:github-fill"
             },
             {
                 "text": "email",
-                "icon": "fas fa-envelope icon"
+                "icon": "ic:baseline-alternate-email"
             },
             {
                 "text": "Antwerp, Belgium",
-                "icon": "fas fa-location-arrow icon"
+                "icon": "carbon:location-current"
             }
         ]
     },
