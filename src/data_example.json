@@ -1,0 +1,356 @@
+{
+    "style": {
+        "main_color": "#319492",
+        "font_family": "Segoe UI",
+        "header_1": {
+            "font_size": "1.8em",
+            "underline": false
+        },
+        "column_widths": [
+            0.5,
+            0.5
+        ]
+    },
+    "header": {
+        "component_title": "header",
+        "name": "Brad DiCaprio",
+        "job_title": "Full-stack engineer",
+        "image": "assets/images/profile_picture.jpg",
+        "information": [
+            {
+                "text": "+ mobile number",
+                "icon": "fas fa-phone icon"
+            },
+            {
+                "text": "github.com/SebastiaanSimons",
+                "icon": "fab fa-github icon"
+            },
+            {
+                "text": "brad@dicaprio.ca",
+                "icon": "fas fa-envelope icon"
+            },
+            {
+                "text": "San Jose, California",
+                "icon": "fas fa-location-arrow icon"
+            }
+        ]
+    },
+    "experience_left": {
+        "component_title": "dynamic",
+        "title": "Experience",
+        "column": "left",
+        "entries": [
+            {
+                "title": "Front-end Engineer",
+                "institution": "Google",
+                "start_date": "01/2021",
+                "end_date": "ongoing",
+                "location": "Dublin, Ireland",
+                "bullet_points": [
+                    {
+                        "text": "Untangling spaghetti code in React."
+                    },
+                    {
+                        "text": "Changing all the div tags to their more appropriate counterparts."
+                    },
+                    {
+                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                    }
+                ]
+            },
+            {
+                "title": "Full-stack engineer",
+                "institution": "Meta",
+                "start_date": "08/2017",
+                "end_date": "12/2020",
+                "location": "Los Angeles, US",
+                "bullet_points": [
+                    {
+                        "text": "Changing all the div tags to their more appropriate counterparts."
+                    },
+                    {
+                        "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
+                    },
+                    {
+                        "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                    },
+                    {
+                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                    }
+                ]
+            }
+        ]
+    },
+    "experience_right": {
+        "component_title": "dynamic",
+        "title": "&nbsp;",
+        "column": "right",
+        "entries": [
+            {
+                "title": "Back-end Engineer",
+                "institution": "AirBnB",
+                "start_date": "01/2011",
+                "end_date": "07/2017",
+                "location": "Dublin, Ireland",
+                "bullet_points": [
+                    {
+                        "text": "Untangling spaghetti code in Angular."
+                    },
+                    {
+                        "text": "Switching to async/await from the numerous callback hells I've encountered."
+                    },
+                    {
+                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                    }
+                ]
+            },
+            {
+                "title": "Front-end intern",
+                "institution": "Amazon",
+                "start_date": "08/2017",
+                "end_date": "12/2017",
+                "location": "Los Angeles, US",
+                "bullet_points": [
+                    {
+                        "text": "Changing all the div tags to their more appropriate counterparts."
+                    },
+                    {
+                        "text": "Building custom interfaces, including a timesheet application used by 10+ companies"
+                    },
+                    {
+                        "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                    },
+                    {
+                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                    }
+                ]
+            }
+        ]
+    },
+    "education": {
+        "component_title": "dynamic",
+        "title": "Education",
+        "column": "left",
+        "entries": [
+            {
+                "title": "MSc Business Science",
+                "institution": "University of Leuven",
+                "start_date": "09/2013",
+                "end_date": "06/2018",
+                "bullet_points": [
+                    {
+                        "text": "Focused mostly on finance and marketing. I also improved my skills in a variety of domains: statistics, maths, economics, languages, ..."
+                    },
+                    {
+                        "text": "Includes a 6-month internship at the finance department of a medium-sized hotel"
+                    },
+                    {
+                        "text": "Master thesis researched the impact of advergames on children's defense against advertisements"
+                    }, 
+                    {
+                        "text": "Countless of useless group projects"
+                    }
+                ]
+            }
+        ]
+    },
+    "strengths": {
+        "component_title": "strengths",
+        "column": "right",
+        "entries": [
+            {
+                "title": "Generalist",
+                "icon": "fas fa-gem",
+                "description": "I'm an explorer, a dabbler, constantly searching for new insights and ideas. Apart from programming, I like to read and do philosophy, play and compose on the piano, write fiction, and many other things."
+            },
+            {
+                "title": "Fast Learner",
+                "icon": "fas fa-chart-line",
+                "description": "I'm able to quickly pick up matter, even if it is well outside of my area of expertise."
+            },
+            {
+                "title": "Autodidact",
+                "icon": "fa fa-atom",
+                "description": "I'm good at learning things by myself, being at the centre of my own learning."
+            }
+        ]
+    },
+    "languages": {
+        "component_title": "languages",
+        "column": "left",
+        "level_entries": [
+            {
+                "name": "English",
+                "level": 5
+            },
+            {
+                "name": "Dutch",
+                "level": 5
+            },
+            {
+                "name": "French",
+                "level": 3
+            },
+            {
+                "name": "Chinese",
+                "level": 1
+            }
+        ]
+    },
+    "projects": {
+        "component_title": "projects",
+        "column": "left",
+        "entries": [
+            {
+                "title": "Food Delivery App",
+                "bullet_points": [
+                    {
+                        "text": "A mobile web app where each week, users can choose between several vegan recipes to be delivered at their doorstep."
+                    },
+                    {
+                        "text": "Technologies: Flutter | Dart | Firebase | Stripe payment integration"
+                    }
+                ]
+            },
+            {
+                "title": "CV Builder",
+                "bullet_points": [
+                    {
+                        "text": "A CV creator to dynamically build your own CV, including this one. (ongoing)"
+                    },
+                    {
+                        "text": "Technologies: Svelte | CSS3 | TypeScript"
+                    }
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "component_title": "skills",
+        "column": "right",
+        "level_groups": [
+            {
+                "group": "Programming Languages",
+                "level_entries": [
+                    {
+                        "name": "Java / Apex (Salesforce)",
+                        "level": 4
+                    },
+                    {
+                        "name": "JavaScript / TypeScript",
+                        "level": 4
+                    },
+                    {
+                        "name": "Rust",
+                        "level": 2
+                    }
+                ]
+            },
+            {
+                "group": "Front-end",
+                "level_entries": [
+                    {
+                        "name": "HTML5 / CSS3",
+                        "level": 4
+                    },
+                    {
+                        "name": "Svelte",
+                        "level": 3
+                    },
+                    {
+                        "name": "LWC (Salesforce)",
+                        "level": 3
+                    },
+                    {
+                        "name": "React (Native)",
+                        "level": 1
+                    },
+                    {
+                        "name": "Flutter",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "group": "Back-end",
+                "level_entries": [
+                    {
+                        "name": "Salesforce Database",
+                        "level": 5
+                    },
+                    {
+                        "name": "SQL / SOQL",
+                        "level": 3
+                    },
+                    {
+                        "name": "GraphQL",
+                        "level": 3
+                    },
+                    {
+                        "name": "AWS",
+                        "level": 2
+                    },
+                    {
+                        "name": "Firebase",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "group": "Other",
+                "level_entries": [
+                    {
+                        "name": "Jira / Trello",
+                        "level": 3
+                    },
+                    {
+                        "name": "Git / GitHub",
+                        "level": 3
+                    },
+                    {
+                        "name": "Blender",
+                        "level": 1
+                    },
+                    {
+                        "name": "Game Development",
+                        "level": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "volunteering": {
+        "component_title": "dynamic",
+        "title": "Volunteering",
+        "column": "right",
+        "entries": [
+            {
+                "title": "Coding Teacher",
+                "institution": "CoderDojo / freelance",
+                "start_date": "05/2019",
+                "end_date": "ongoing",
+                "location": "Antwerp, Belgium",
+                "bullet_points": [
+                    {
+                        "text": "Teaching kids between 7 - 18 how to code through many different projects"
+                    },
+                    {
+                        "text": "Creating and teaching a personalized programming course for beginners"
+                    }
+                ]
+            },
+            {
+                "title": "English Teacher",
+                "institution": "Aiesec / Vietlish",
+                "start_date": "06/2018",
+                "end_date": "08/2018",
+                "location": "Ho Chi Minh City, Vietnam",
+                "bullet_points": [
+                    {
+                        "text": "Back in 2018, I went to Vietnam for 3 months to aid university students with their English study through a series of discussion classes. It was a wonderful experience, enabling me to empower others and at the same time, have a deeper self-understanding."
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -5,7 +5,7 @@
 	let style = data["style"]; 
 </script>
 
-<h2 style="font-size: {style.header_1.font_size}">{title}</h2>
+<h2 style="font-size: {style.header_1.font_size}">{@html title}</h2>
 {#if style.header_1.underline}
 <hr />
 {/if}
