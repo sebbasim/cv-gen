@@ -1,10 +1,8 @@
-import express, { static } from 'express';
-import cors from 'cors';
-import { resolve } from 'path';
-import { launch } from 'puppeteer';
-
+const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
+const cors = require('cors');
+const path = require('path');
 
 app.use(cors());
 
@@ -18,9 +16,9 @@ app.get('/pdf', (req, res) => {
     })();
 });
 
-app.use(static('public'));
+app.use(express.static('public'));
 app.use('*', (req, res) => {
-    res.sendFile(resolve(__dirname, 'public', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
