@@ -62,7 +62,9 @@
 	const init = async () => {
 		for (const key in data) {
 			const component_data = data[key];
-			component_data["component"] = component_constructor(component_data["component_title"]);
+			component_data["component"] = component_constructor(
+				component_data["component_title"]
+			);
 			component_data["key"] = key;
 			if (component_data["column"] === "left") {
 				components_left = [...components_left, component_data];
@@ -117,19 +119,35 @@
 	onMount(() => {
 		init();
 	});
+
+	// async function generate_pdf() {
+	// 	try {
+	// 		await fetch(`/pdf`);
+	// 	} catch (error) {
+	// 		console.error(error);
+	// 	}
+	// }
 </script>
+
+<!--<button on:click={generate_pdf}>Generate PDF</button>-->
 
 <Footer />
 <Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
 	<div class="left-column" style="flex: 0 0 {left_flex}%">
 		{#each components_left as component_left}
-			<svelte:component this={component_left.component} component_title={component_left["key"]} />
+			<svelte:component
+				this={component_left.component}
+				component_title={component_left["key"]}
+			/>
 		{/each}
 	</div>
 	<div class="right-column" style="flex: 0 0 {right_flex}%">
 		{#each components_right as component_right}
-			<svelte:component this={component_right.component} component_title={component_right["key"]}/>
+			<svelte:component
+				this={component_right.component}
+				component_title={component_right["key"]}
+			/>
 		{/each}
 	</div>
 </main>
@@ -157,4 +175,5 @@
 		/* blue: #00bfff; */
 		--main-color: var(--main_color);
 	}
+
 </style>
