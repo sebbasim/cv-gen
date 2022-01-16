@@ -14,19 +14,19 @@
     "header": {
         "component_title": "header", 
         "name": "Sebastiaan Simons",
-        "job_title": "Full-stack engineer",
+        "job_title": "Full Stack Developer",
         "image": "assets/images/profile_picture.jpg",
         "information": [
             {
-                "text": "+ mobile number",
+                "text": "+ 32 4 72 81 13 33",
                 "icon": "fas fa-phone icon"
             },
             {
-                "text": "github.com/SebastiaanSimons",
+                "text": "github.com/sebbasim",
                 "icon": "fab fa-github icon"
             },
             {
-                "text": "email",
+                "text": "sebastiaansimons@outlook.com",
                 "icon": "fas fa-envelope icon"
             },
             {
@@ -40,7 +40,7 @@
         "column": "left",
         "bullet_points": [
             {
-                "text": "3+ years of experience as a software / full-stack engineer."
+                "text": "3+ years of experience as a software / full stack developer"
             },
             {
                 "text": "Done several complex (Salesforce) implementations for a wide variety of companies"
@@ -56,20 +56,20 @@
         "column": "left",
         "entries": [
             {
-                "title": "Full-stack Engineer",
+                "title": "Full Stack Developer",
                 "institution": "Sparklink",
                 "start_date": "01/2020",
-                "end_date": "06/2021",
+                "end_date": "08/2021",
                 "location": "Antwerp, Belgium",
                 "bullet_points": [
                     {
-                        "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work."
+                        "text": "Implementing complex logic on the Salesforce platform including building custom interfaces, table/trigger logic and async work"
                     },
                     {
-                        "text": "API integrations with external systems: ticketing systems, websites, planning applications,..."
+                        "text": "Setting up REST API integrations with external systems and creating and maintaining a set of internal endpoints"
                     },
                     {
-                        "text": "Salesforce Marketing Cloud: building highly personalized, automatic mails, setting up customer journeys, data automations,..."
+                        "text": "Building highly personalized, automatic mails, setting up customer journeys, data automations,..."
                     }
                 ]
             },
@@ -82,11 +82,11 @@
                 "bullet_points": [
                     {
                         "id": 1,
-                        "text": "Setting up and maintaining the Salesforce environment and data model for various clients, using both declarative and programmatic tools"
+                        "text": "Configuring and maintaining the Salesforce environment and data model for various clients, using both declarative and programmatic tools"
                     },
                     {
                         "id": 2,
-                        "text": "Development and template building for a document generation tool available on the AppExchange"
+                        "text": "Development and template building for a document generation tool available on the Salesforce app store"
                     },
                     {
                         "id": 3,
@@ -134,7 +134,7 @@
                 "level": 2
             },
             {
-                "name": "German | Chinese",
+                "name": "German  Chinese",
                 "level": 1
             }
         ]
@@ -227,10 +227,6 @@
                     {
                         "name": "React (Native)",
                         "level": 1
-                    },
-                    {
-                        "name": "Flutter",
-                        "level": 1
                     }
                 ]
             },
@@ -240,6 +236,10 @@
                     {
                         "name": "Salesforce Database",
                         "level": 5
+                    },
+                    {
+                        "name": "NodeJS",
+                        "level": 3
                     },
                     {
                         "name": "SQL / SOQL",
