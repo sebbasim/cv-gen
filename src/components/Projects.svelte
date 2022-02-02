@@ -11,7 +11,7 @@
         <SubTitle title={project.title} />
         <ul>
             {#each project.bullet_points as bullet}
-                <li style="font-size:0.9em">
+                <li>
                     {bullet.text}
                 </li>
             {/each}
@@ -26,5 +26,6 @@
     }
     li {
         margin-bottom: 5px;
+        font-size:0.9em;
     }
 </style>

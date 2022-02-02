@@ -134,7 +134,7 @@
 <Footer />
 <Header on:height={header_height_handler} />
 <main style="font-family:{style.font_family}">
-	<div class="left-column" style="flex: 0 0 {left_flex}%">
+	<div class="left-column" style:flex="0 0 {left_flex}%">
 		{#each components_left as component_left}
 			<svelte:component
 				this={component_left.component}
@@ -142,7 +142,7 @@
 			/>
 		{/each}
 	</div>
-	<div class="right-column" style="flex: 0 0 {right_flex}%">
+	<div class="right-column" style:flex="0 0 {right_flex}%">
 		{#each components_right as component_right}
 			<svelte:component
 				this={component_right.component}

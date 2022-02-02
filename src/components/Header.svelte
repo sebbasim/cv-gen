@@ -17,7 +17,7 @@
 
 <div
     class="flex-container"
-    style="font-family:{style.font_family}"
+    style:font-family={style.font_family}
     bind:clientHeight={height}
 >
     <div>
